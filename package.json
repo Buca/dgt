@@ -1,16 +1,27 @@
 {
-  "name": "dgt",
+  "name": "@buca/dgt",
   "version": "0.0.1",
-  "description": "Directed Graph Theory toolkit in JavaScript",
+  "description": "Directed Graph Toolkit – A modular graph theory library for JavaScript",
   "type": "module",
   "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
   "scripts": {
-    "test": "node --test",
+    "test": "node test/Digraph.test.js",
     "dev": "vite"
   },
-  "keywords": ["graph", "digraph", "directed", "javascript", "library"],
+  "keywords": ["graph", "digraph", "directed", "graph-theory", "javascript", "library"],
   "author": "Your Name",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buca/dgt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/buca/dgt/issues"
+  },
+  "homepage": "https://github.com/buca/dgt#readme",
   "devDependencies": {
     "vite": "^5.0.0"
   }
